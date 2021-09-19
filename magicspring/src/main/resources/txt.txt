@@ -1,0 +1,8 @@
+CREATE TABLE `legalities` (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    format ENUM('commander', 'duel', 'legacy', 'modern', 'paupercommander', 'penny', 'premodern', 'vintage', 'gladiator', 'historic', 'historicbrawl', 'pauper', 'pioneer', 'brawl', 'standard', 'future', 'oldschool'),
+    status ENUM('Legal', 'Restricted', 'Banned'),
+    uuid CHAR(36) NOT NULL,
+    INDEX(uuid),
+    FOREIGN KEY (uuid) REFERENCES cards(uuid) ON UPDATE CASCADE ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
