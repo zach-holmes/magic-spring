@@ -1,6 +1,8 @@
 package com.pangolex.magicspring.dto;
 
 import com.pangolex.magicspring.entity.Legalities;
+import com.pangolex.magicspring.model.LegalityFormat;
+import com.pangolex.magicspring.model.LegalityStatus;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,8 +10,8 @@ import lombok.Setter;
 @Setter
 public class LegalitiesDTO {
     private Integer id;
-    private String format;
-    private String status;
+    private LegalityFormat format;
+    private LegalityStatus status;
     private String uuid;
 
     public void entityToDTO(Legalities legalities){

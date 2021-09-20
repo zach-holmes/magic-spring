@@ -1,6 +1,6 @@
 package com.pangolex.magicspring.model;
 
-public enum Type {
+public enum SetType {
     core,
     masters,
     expansion,

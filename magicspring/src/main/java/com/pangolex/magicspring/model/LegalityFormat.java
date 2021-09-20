@@ -1,6 +1,6 @@
 package com.pangolex.magicspring.model;
 
-public enum Format {
+public enum LegalityFormat {
     commander,
     duel,
     legacy,

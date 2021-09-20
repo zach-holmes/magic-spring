@@ -1,6 +1,5 @@
 package com.pangolex.magicspring.entity;
 
-import com.pangolex.magicspring.model.Type;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.RequiredArgsConstructor;
