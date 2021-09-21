@@ -9,7 +9,7 @@ To set up database"
 
 ```sh
 mysql
-CREATE DATABASE <DATABASE_NAME>;
-USE <DATABASE_NAME>;
+CREATE DATABASE MAGICSPRING;
+USE MAGICSPRING;
 source <path_to_sql_file>/AllPrintings.sql
 ```
