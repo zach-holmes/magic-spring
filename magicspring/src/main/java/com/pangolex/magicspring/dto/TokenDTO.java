@@ -1,0 +1,156 @@
+package com.pangolex.magicspring.dto;
+
+import com.pangolex.magicspring.entity.Token;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@RequiredArgsConstructor
+public class TokenDTO {
+    private Integer id;
+    private String artist;
+    private String asciiName;
+    private String availability;
+    private String borderColor;
+    private String colorIdentity;
+    private String colors;
+    private Integer edhrecRank;
+    private String faceName;
+    private String finishes;
+    private String flavorText;
+    private String frameEffects;
+    private String frameVersion;
+    private Integer hasFoil;
+    private Integer hasNonFoil;
+    private Integer isFullArt;
+    private Integer isPromo;
+    private Integer isReprint;
+    private String keywords;
+    private String layout;
+    private String mcmId;
+    private String mtgArenaId;
+    private String mtgjsonV4Id;
+    private String multiverseId;
+    private String name;
+    private String number;
+    private String originalText;
+    private String originalType;
+    private String power;
+    private String promoTypes;
+    private String reverseRelated;
+    private String scryfallId;
+    private String scryfallIllustrationId;
+    private String scryfallOracleId;
+    private String setCode;
+    private String side;
+    private String subtypes;
+    private String supertypes;
+    private String tcgplayerProductId;
+    private String text;
+    private String toughness;
+    private String type;
+    private String types;
+    private String uuid;
+    private String watermark;
+
+    public void EntityToDTO(Token token){
+        this.id = token.getId();
+        this.artist = token.getArtist();
+        this.asciiName = token.getAsciiName();
+        this.availability = token.getAvailability();
+        this.borderColor = token.getBorderColor();
+        this.colorIdentity = token.getColorIdentity();
+        this.colors = token.getColors();
+        this.edhrecRank = token.getEdhrecRank();
+        this.faceName = token.getFaceName();
+        this.finishes = token.getFinishes();
+        this.flavorText = token.getFlavorText();
+        this.frameEffects = token.getFrameEffects();
+        this.frameVersion = token.getFrameVersion();
+        this.hasFoil = token.getHasFoil();
+        this.hasNonFoil = token.getHasNonFoil();
+        this.isFullArt = token.getIsFullArt();
+        this.isPromo = token.getIsPromo();
+        this.isReprint = token.getIsReprint();
+        this.keywords = token.getKeywords();
+        this.layout = token.getLayout();
+        this.mcmId = token.getMcmId();
+        this.mtgArenaId = token.getMtgArenaId();
+        this.mtgjsonV4Id = token.getMtgjsonV4Id();
+        this.multiverseId = token.getMultiverseId();
+        this.name = token.getName();
+        this.number = token.getNumber();
+        this.originalText = token.getOriginalText();
+        this.originalType = token.getOriginalType();
+        this.power = token.getPower();
+        this.promoTypes = token.getPromoTypes();
+        this.reverseRelated = token.getReverseRelated();
+        this.scryfallId = token.getScryfallId();
+        this.scryfallIllustrationId = token.getScryfallIllustrationId();
+        this.scryfallOracleId = token.getScryfallOracleId();
+        this.setCode = token.getSetCode();
+        this.side = token.getSide();
+        this.subtypes = token.getSubtypes();
+        this.supertypes = token.getSupertypes();
+        this.tcgplayerProductId = token.getTcgplayerProductId();
+        this.text = token.getText();
+        this.toughness = token.getToughness();
+        this.type = token.getType();
+        this.types = token.getTypes();
+        this.uuid = token.getUuid();
+        this.watermark = token.getWatermark();
+    }
+
+    public Token DTOToEntity(){
+        Token token = new Token();
+        token.setId(id);
+        token.setArtist(artist);
+        token.setAsciiName(asciiName);
+        token.setAvailability(availability);
+        token.setBorderColor(borderColor);
+        token.setColorIdentity(colorIdentity);
+        token.setColors(colors);
+        token.setEdhrecRank(edhrecRank);
+        token.setFaceName(faceName);
+        token.setFinishes(finishes);
+        token.setFlavorText(flavorText);
+        token.setFrameEffects(frameEffects);
+        token.setFrameVersion(frameVersion);
+        token.setHasFoil(hasFoil);
+        token.setHasNonFoil(hasNonFoil);
+        token.setIsFullArt(isFullArt);
+        token.setIsPromo(isPromo);
+        token.setIsReprint(isReprint);
+        token.setKeywords(keywords);
+        token.setLayout(layout);
+        token.setMcmId(mcmId);
+        token.setMtgArenaId(mtgArenaId);
+        token.setMtgjsonV4Id(mtgjsonV4Id);
+        token.setMultiverseId(multiverseId);
+        token.setName(name);
+        token.setNumber(number);
+        token.setOriginalText(originalText);
+        token.setOriginalType(originalType);
+        token.setPower(power);
+        token.setPromoTypes(promoTypes);
+        token.setReverseRelated(reverseRelated);
+        token.setScryfallId(scryfallId);
+        token.setScryfallIllustrationId(scryfallIllustrationId);
+        token.setScryfallOracleId(scryfallOracleId);
+        token.setSetCode(setCode);
+        token.setSide(side);
+        token.setSubtypes(subtypes);
+        token.setSupertypes(supertypes);
+        token.setTcgplayerProductId(tcgplayerProductId);
+        token.setText(text);
+        token.setToughness(toughness);
+        token.setType(type);
+        token.setTypes(types);
+        token.setUuid(uuid);
+        token.setWatermark(watermark);
+        return token;
+    }
+
+}
